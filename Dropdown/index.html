@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multiselect Dropdown</title>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="container-multiselect-dropdown">
+      <div class="custom-select">
+        <div class="select-box">
+          <input
+            type="text"
+            class="tags_input"
+            name="tags"
+            hidden
+            placeholder="Show/hidde columns"
+          />
+          <div class="selected-options">
+            <!-- <span class="tag"
+              >Schneider Part Number<span class="removed-tag"
+                ><i class="bx bx-x"></i></span
+            ></span>
+            <span class="tag"
+              >Supplier Parent Name
+              <span class="removed-tag"><i class="bx bx-x"></i></span
+            ></span>
+            <span class="tag"
+              >Gross Productivity USD
+              <span class="removed-tag"><i class="bx bx-x"></i></span
+            ></span>
+            <span class="tag"
+              >RMI Impact Region<span class="removed-tag"
+                ><i class="bx bx-x"></i></span
+            ></span> -->
+          </div>
+          <div class="arrow">
+            <i class="bx bx-chevron-down"></i>
+          </div>
+        </div>
+
+        <div class="options">
+          <div class="option-search-tags">
+            <i class="bx bx-search bx-sm"></i>
+            <input
+              type="text"
+              class="search-tags"
+              placeholder="Search Column"
+            />
+            <button type="button" class="clear-options">
+              <i class="bx bx-x bx-sm"></i>
+            </button>
+          </div>
+
+          <div class="option all-tags" data-value="All">Select All</div>
+          <div class="option" data-value="RMI Impact Region">
+            <i class="bx bx-checkbox bx-sm"></i>
+            RMI Impact Region
+          </div>
+          <div class="option" data-value="Cluster">
+            <i class="bx bx-checkbox bx-sm"></i>
+            Cluster
+          </div>
+          <div class="option" data-value="GSC Entity">
+            <i class="bx bx-checkbox bx-sm"></i>
+            GSC Entity
+          </div>
+          <div class="option" data-value="Stars Family Code">
+            <i class="bx bx-checkbox bx-sm"></i>
+            Stars Family Code
+          </div>
+          <div class="option" data-value="Stars Category Code">
+            <i class="bx bx-checkbox bx-sm"></i>
+            Stars Category Code
+          </div>
+          <div class="option" data-value="Site Code">
+            <i class="bx bx-checkbox bx-sm"></i>
+            Site Code
+          </div>
+          <div class="option" data-value="Productivity Lever">
+            <i class="bx bx-checkbox bx-sm"></i>
+            Productivity Lever
+          </div>
+          <div class="option" data-value="AOC Qty YTD Current Year">
+            <i class="bx bx-checkbox bx-sm"></i>
+            AOC Qty YTD Current Year
+          </div>
+          <div class="no-result-multiselect-dropdown" style="display: none">
+            No result match
+          </div>
+        </div>
+      </div>
+      <input type="button" class="btn_submit" value="Submit" />
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
